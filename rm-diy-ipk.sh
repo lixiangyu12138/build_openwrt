@@ -17,4 +17,5 @@ rm -rf /home/zlq/bianyi/ledeipk/package/xray-plugin
 rm -rf /home/zlq/bianyi/ledeipk/package/naiveproxy
 rm -rf /home/zlq/bianyi/ledeipk/package/shadowsocks-rust
 rm -rf /home/zlq/bianyi/ledeipk/package/v2ray-plugin
+rm -rf /home/zlq/bianyi/ledeipk/package/shadowsocksr-libev
 rm -rf /home/zlq/bianyi/ledeipk/package/lua-maxminddb
