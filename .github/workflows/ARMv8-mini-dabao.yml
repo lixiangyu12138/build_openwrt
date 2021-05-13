@@ -93,6 +93,7 @@ jobs:
         #sudo tar xvzf mk_*.tar.gz
         cd ..
         git clone https://github.com/unifreq/openwrt_packit openwrt
+        sudo cp $GITHUB_WORKSPACE/ARMv8/whoami ./openwrt/
         sudo cp -r $GITHUB_WORKSPACE/ARMv8/respawn_mks.sh ./
         sudo chmod +x respawn_mks.sh
         sudo ./respawn_mks.sh
