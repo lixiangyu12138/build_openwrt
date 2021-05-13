@@ -1,7 +1,8 @@
 #!/bin/bash
 
 cd openwrt
-sed -i '2,10 s/\(#\)\(.*\)/\2/' make.env
+sed -i "s/#KERNEL_VERSION/KERNEL_VERSION/" make.env
+#sed -i '2,10 s/\(#\)\(.*\)/\2/' make.env
 OLD=$(grep \+o\" make.env)
 NEW=$(grep \+\" make.env)
 echo $OLD
