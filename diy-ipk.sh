@@ -30,10 +30,7 @@ svn co https://github.com/fw876/helloworld/trunk/shadowsocksr-libev package/shad
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=@TARGET_armvirt_64/g' package/lean/luci-app-cpufreq/Makefile
-cat package/lean/luci-app-cpufreq/Makefile
-sed -i 's/entry({"admin", "services", "cpufreq"}, cbi("cpufreq"), _("CPU Freq"), 900).dependent = false/entry({"admin", "system", "cpufreq"}, cbi("cpufreq"), _("CPU Freq"), 9).dependent = false/g' package/lean/luci-app-cpufreq/luasrc/controller/cpufreq.lua
-cat package/lean/luci-app-cpufreq/luasrc/controller/cpufreq.lua
+
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
